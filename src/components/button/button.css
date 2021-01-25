@@ -1,8 +1,14 @@
 .btn {
-  border-radius: 20px;
+  border-radius: 40px;
   font-size: 1.2rem;
   color: white;
-  background: #016b6b;
+  background: #fc6011;
   border: none;
-  padding: 10px 20px;
+  padding: 16px 30px 19px 30px;
+}
+.btn-border {
+  color: #fc6011;
+  background: white;
+  outline: #fc6011;
+  border: solid 2px;
 }
