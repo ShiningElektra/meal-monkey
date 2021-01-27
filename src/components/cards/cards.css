@@ -1,12 +1,10 @@
 .card {
-  max-width: 88px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background: white;
-}
-.card-text {
+  width: 100%;
+  margin: 0%;
   align-items: center;
   text-align: center;
+}
+.card-text {
   font-weight: bold;
   min-height: 1.5rem;
 }
@@ -18,3 +16,32 @@
   max-width: 88px;
   height: 88px;
 }
+
+.card-container {
+  padding-left: 20px;
+  padding-top: 20px;
+  grid-auto-flow: column;
+  /* ^ ganze Seite würde zur Seite gescrollt */
+  overflow-x: auto;
+  /* ^ der bereich wird auf der x-Achse scrollbar */
+  column-gap: 20px;
+  /* ^ beschreibt der grid wieviel pixel dazwischen platz ist */
+  display: grid;
+  justify-content: start;
+}
+
+.card-container::after {
+  content: "";
+  width: 3px;
+}
+/* ^ weißer Platz ganz rechts */
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+/* ^ Scrollbar unsichtbar - PC user können nur mit gedrückter Shift-Taste scrollen */
+
+.priority {
+  order: -1;
+}
+/* Order-Button nach vorne sortieren */
