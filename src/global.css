@@ -1,9 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fc6011;
+  --bg-input-color: #f2f2f2;
+  --bg-facebook-color: #367fc0;
+  --bg-google-color: #dd4b39;
+  --bg-color: #ffffff;
+  --rating-color: #ee5a30;
+  --rating-text-color: #ee5a30;
+  --primary-font-color: #4a4b4d;
+  --secondary-font-color: #7c7d7e;
+  --placeholder-font-color: #b6b7b7;
+  --negative-font-color: #ffffff;
+  --primary-negativ-font-color: #fc6011;
+  --font-family: "Quicksand", sans-serif;
+  --headline1: 30pt;
+  --headline2: 22pt;
+  --input-text-size: 14pt;
+  --text-size: 12pt;
 }
 
 html {

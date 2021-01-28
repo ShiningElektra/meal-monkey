@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: --var;
 }
 
 /* 100vw spannen das bild über die ganze Seite */
@@ -33,7 +34,7 @@ dazu gibt es noch start oder end center für oben und unten */
 }
 
 .primary-color {
-  color: chocolate;
+  color: var(--primary-color);
 }
 
 .logosubtext {
