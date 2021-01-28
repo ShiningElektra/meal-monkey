@@ -1,15 +1,59 @@
+/* flex box solution */
+
 .welcome {
+  background-image: url("../../assets/mealmonkey-background.svg");
   height: 100vh;
   width: 100vw;
-  background-color: #1fc8db;
-  background-image: linear-gradient(
-    141deg,
-    #9fb8ad 0%,
-    #1fc8db 51%,
-    #2cb5e8 75%
-  );
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
+
+/* 100vw spannen das bild über die ganze Seite */
+
+/* grid solution */
+
+/* .welcome {
+  background-image: url("../../assets/mealmonkey-background.svg");
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  grid-gap: 0.2em;
+} */
+
+/* shothand place-items gibt es nur im grid 
+dazu gibt es noch start oder end center für oben und unten */
+
+.logotext {
+  font-size: 34pt;
+  font-weight: bold;
+}
+
+.primary-color {
+  color: chocolate;
+}
+
+.logosubtext {
+  font-variant-caps: all-small-caps;
+  font-size: 18pt;
+}
+.welcome > * {
+  margin: 0px;
+}
+
+/* jedes Element kriegt einen margin nach unten */
+
+.welcome > * :not(:last-child) {
+  margin-bottom: 6px;
+}
+
+/* selector :not(:last-child) nimmt das letzte Element raus */
+
+/* .welcome p,
+.welcome h1 {
+  margin: 0px;
+} würde die margin von h1 und p innerhalb von welcome auf 0 setzten
+.welcome > * würde den margin von jedem nachfolgendem Element auf 0 setzen   */
