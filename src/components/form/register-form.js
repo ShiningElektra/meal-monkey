@@ -9,6 +9,7 @@
 export function createRegisterForm() {
 const button=document.createElement("button");
 button.innerText="Register";
+button.className="btn btn-border";
 
 function register(){
     alert("Registered");

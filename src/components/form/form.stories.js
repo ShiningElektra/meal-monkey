@@ -1,4 +1,4 @@
-import { format } from "prettier";
+
 import "./form.css";
 import {createRegisterForm } from "./register-form";
 
