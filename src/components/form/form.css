@@ -12,3 +12,7 @@
   outline: #fc6011;
   border: solid 2px;
 }
+.title-text {
+  color: dimgrey;
+  font: 1em sans-serif;
+}

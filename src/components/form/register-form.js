@@ -7,6 +7,13 @@
     </form> */}
 
 export function createRegisterForm() {
+const form=document.createElement("form");
+form.className="form";
+
+const title=document.createElement("h2")
+title.innerText="Reset Password";
+title.className="title-text";
+
 const button=document.createElement("button");
 button.innerText="Register";
 button.className="btn btn-border";
@@ -17,5 +24,7 @@ function register(){
 
 button.addEventListener("click", register);
 
-return button;
+form.append(title, button);
+
+return form;
 }

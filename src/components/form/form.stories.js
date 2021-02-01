@@ -1,6 +1,6 @@
 
 import "./form.css";
-import {createRegisterForm } from "./register-form";
+import {createRegisterForm } from "./register-form.js";
 
 export default{
     title:"Components/Form",
