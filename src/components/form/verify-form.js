@@ -10,6 +10,17 @@ function createOTPInputElement() {
 
   return input;
 }
+function createPasswordContainerElement() {
+  const otpOne = createOTPInputElement();
+  const otpTwo = createOTPInputElement();
+  const otpThree = createOTPInputElement();
+  const optFour = createOTPInputElement();
+  const passwordContainer = createElement("div", {
+    className: "verify__otp",
+    children: [otpOne, otpTwo, otpThree, optFour],
+  });
+  return passwordContainer;
+}
 
 export function createVerifyForm() {
   const verify = document.createElement("verify");
@@ -24,14 +35,7 @@ export function createVerifyForm() {
       "Please check your mobile number 017******36 continue to reset your password",
   });
 
-  const otpOne = createOTPInputElement();
-  const otpTwo = createOTPInputElement();
-  const otpThree = createOTPInputElement();
-  const optFour = createOTPInputElement();
-
-  const passwordContainer = document.createElement("div");
-  passwordContainer.className = "verify__otp";
-  passwordContainer.append(otpOne, otpTwo, otpThree, optFour);
+  const passwordContainer = createPasswordContainerElement();
 
   const button = document.createElement("button");
   button.className = "btn";
