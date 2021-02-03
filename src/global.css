@@ -26,7 +26,7 @@
   --placeholder-font-color: #b6b7b7;
   --negative-font-color: #ffffff;
   --primary-negativ-font-color: #fc6011;
-  --font-family: "Quicksand", sans-serif;
+  --font-family: "Metropolis", sans-serif;
   --headline1: 30pt;
   --headline2: 22pt;
   --input-text-size: 14pt;
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Metropolis", sans-serif;
   margin: 0;
 }
 
@@ -48,5 +48,5 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Metropolis", sans-serif;
 }
